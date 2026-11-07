@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>TierShare</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <input id="title" type="text" placeholder="Tier list title…" autocomplete="off" />
+        <div class="header-actions">
+          <button id="share" class="btn" type="button">Share</button>
+          <button id="copy" class="btn primary" type="button">Copy link</button>
+        </div>
+      </header>
+
+      <form id="add-form">
+        <input
+          id="add-input"
+          type="text"
+          placeholder="Add an item… (include a URL to make it a link)"
+          autocomplete="off"
+        />
+        <button class="btn" type="submit">Add</button>
+      </form>
+
+      <main id="board"></main>
+
+      <footer>
+        <span id="url-status"></span>
+      </footer>
+
+      <div id="toast" class="toast hidden"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
